@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Portfolio of Charan M, a 3rd-semester B.Tech Computer Science and Engineering student.">
+
+<title>Charan M | CSE Student Portfolio</title>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        color: #1e293b;
+        line-height: 1.6;
+    }
+
+    nav {
+        background: #0f172a;
+        color: white;
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    nav ul li a:hover {
+        color: #60a5fa;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        color: white;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+        color: #60a5fa;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        max-width: 650px;
+        margin: 0 auto 30px;
+        color: #dbeafe;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 13px 25px;
+        background: #3b82f6;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #2563eb;
+        transform: translateY(-2px);
+    }
+
+    section {
+        padding: 70px 8%;
+        scroll-margin-top: 70px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 35px;
+        color: #0f172a;
+        margin-bottom: 10px;
+    }
+
+    .section-title p {
+        color: #64748b;
+    }
+
+    .about {
+        max-width: 850px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        color: #475569;
+    }
+
+    .projects {
+        background: #ffffff;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .project-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 30px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+    }
+
+    .project-card h3 {
+        color: #0f172a;
+        margin-bottom: 15px;
+        font-size: 21px;
+    }
+
+    .project-card p {
+        color: #64748b;
+        margin-bottom: 20px;
+    }
+
+    .project-link {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: bold;
+        word-break: break-word;
+    }
+
+    .project-link:hover {
+        text-decoration: underline;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .skill {
+        padding: 12px 20px;
+        background: white;
+        border: 1px solid #dbeafe;
+        border-radius: 25px;
+        color: #1d4ed8;
+        font-weight: bold;
+    }
+
+    .goal {
+        background: #0f172a;
+        color: white;
+        text-align: center;
+    }
+
+    .goal .section-title h2 {
+        color: white;
+    }
+
+    .goal .section-title p {
+        color: #94a3b8;
+    }
+
+    .goal-box {
+        max-width: 750px;
+        margin: auto;
+        font-size: 20px;
+        color: #dbeafe;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact-info {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .contact-info p {
+        margin: 12px 0;
+        font-size: 17px;
+    }
+
+    .contact-info a {
+        color: #2563eb;
+        text-decoration: none;
+        word-break: break-word;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background: #020617;
+        color: #cbd5e1;
+        text-align: center;
+        padding: 25px;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
+
+    footer a {
+        color: #60a5fa;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 800px) {
+
+        nav {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        nav ul {
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero h2 {
+            font-size: 21px;
+        }
+
+        .hero p {
+            font-size: 16px;
+        }
+
+        .project-container {
+            grid-template-columns: 1fr;
+        }
+
+        section {
+            padding: 55px 6%;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        nav h2 {
+            font-size: 20px;
+        }
+
+        nav ul {
+            font-size: 14px;
+        }
+
+        .section-title h2 {
+            font-size: 29px;
+        }
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<nav>
+
+    <h2>Charan M</h2>
+
+    <ul>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+            <a href="#goal">Goal</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Hi, I'm <span>Charan M</span>
+        </h1>
+
+        <h2>
+            3rd-Semester B.Tech Computer Science and Engineering Student
+        </h2>
+
+        <p>
+            I am a B.Tech CSE student developing my programming and
+            problem-solving skills through coding practice, GitHub work,
+            and collaborative learning.
+        </p>
+
+        <a href="#projects" class="btn">
+            View My Projects
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="about">
+
+    <div class="section-title">
+
+        <h2>About Me</h2>
+
+        <p>
+            A little about my learning journey
+        </p>
+
+    </div>
+
+    <div class="about">
+
+        <p>
+            I am Charan M, a 3rd-semester B.Tech Computer Science and
+            Engineering student. I am currently building my programming
+            and problem-solving skills through hands-on coding practice.
+            I use GitHub to organize and showcase my learning activities
+            and solutions. I am interested in continuously improving my
+            technical foundation and learning through practical work.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="projects" class="projects">
+
+    <div class="section-title">
+
+        <h2>Projects & Learning Activities</h2>
+
+        <p>
+            My current coding and collaboration work
+        </p>
+
+    </div>
+
+
+    <div class="project-container">
+
+
+        <div class="project-card">
+
+            <h3>
+                LeetCode Solutions Repository
+            </h3>
+
+            <p>
+                A repository where I organize my LeetCode practice and
+                solutions as part of my ongoing programming and
+                problem-solving practice.
+            </p>
+
+            <a
+                class="project-link"
+                href="https://github.com/chandu375/leetcode-solutions"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View LeetCode Repository →
+            </a>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>
+                GitHub Coding Practice
+            </h3>
+
+            <p>
+                I use GitHub to organize my programming practice,
+                maintain solutions, and track my learning progress
+                through different coding activities.
+            </p>
+
+            <a
+                class="project-link"
+                href="https://github.com/chandu375"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View GitHub Profile →
+            </a>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>
+                Programming Practice
+            </h3>
+
+            <p>
+                I am developing my programming and problem-solving
+                abilities by practicing different coding problems and
+                learning programming concepts.
+            </p>
+
+            <a
+                class="project-link"
+                href="https://github.com/chandu375/leetcode-solutions"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View My Solutions →
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section id="skills">
+
+    <div class="section-title">
+
+        <h2>Skills</h2>
+
+        <p>
+            Skills currently being developed
+        </p>
+
+    </div>
+
+
+    <div class="skills-container">
+
+        <div class="skill">
+            C
+        </div>
+
+        <div class="skill">
+            C++
+        </div>
+
+        <div class="skill">
+            Web Development
+        </div>
+
+        <div class="skill">
+            Python
+        </div>
+
+        <div class="skill">
+            Java
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="goal" class="goal">
+
+    <div class="section-title">
+
+        <h2>
+            Career / Learning Goal
+        </h2>
+
+        <p>
+            My current direction
+        </p>
+
+    </div>
+
+
+    <div class="goal-box">
+
+        <p>
+            My current goal is to improve my programming and
+            problem-solving skills and build a strong foundation
+            for a career in software development.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+    <div class="section-title">
+
+        <h2>
+            Contact
+        </h2>
+
+        <p>
+            Connect with me
+        </p>
+
+    </div>
+
+
+    <div class="contact-info">
+
+        <p>
+
+            <strong>Email:</strong>
+
+            <a href="mailto:chandump2007@gmail.com">
+                chandump2007@gmail.com
+            </a>
+
+        </p>
+
+
+        <p>
+
+            <strong>GitHub:</strong>
+
+            <a
+                href="https://github.com/chandu375"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                github.com/chandu375
+            </a>
+
+        </p>
+
+
+        <p>
+
+            <strong>LinkedIn:</strong>
+
+            <a
+                href="https://www.linkedin.com/in/charan-m-02b343384/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                linkedin.com/in/charan-m-02b343384
+            </a>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Charan M. All rights reserved.
+    </p>
+
+    <p>
+
+        <a
+            href="https://github.com/chandu375"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub Profile →
+        </a>
+
+    </p>
+
+</footer>
+```
+
+</body>
+
+</html>
